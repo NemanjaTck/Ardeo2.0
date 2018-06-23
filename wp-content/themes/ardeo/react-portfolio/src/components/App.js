@@ -1,5 +1,7 @@
 import React from "react";
+
 import PortfolioItem from "./PortfolioItem";
+import Header from './Header';
 
 class App extends React.Component {
   render() {
