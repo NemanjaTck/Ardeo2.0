@@ -6,3 +6,13 @@ function ardeo_script_enqueue() {
 }
 
 add_action('wp_enqueue_scripts', 'ardeo_script_enqueue');
+
+function ardeo_theme_setup() {
+  add_theme_support('menus');
+
+  register_nav_menu('primary', 'Primary Navigation');
+  register_nav_menu('secondary', 'Footer Navigation');
+}
+
+add_action('init', 'ardeo_theme_setup');
+
