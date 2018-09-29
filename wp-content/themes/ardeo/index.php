@@ -1,8 +1,9 @@
 <?php get_header();?>
 
 <?php 
+/* Custom portfolio posts query */
   $portfolio_query = new WP_Query( array( 'post_type' => 'portfolio') ); ?>
-  
+
 <?php if ( $portfolio_query->have_posts() ) : ?>
     <div class="portfolio-feed">
         <?php while ( $portfolio_query->have_posts() ) : $portfolio_query->the_post(); ?>
