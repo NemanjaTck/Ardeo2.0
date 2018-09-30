@@ -1,13 +1,22 @@
 body {
-  background: white; }
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00467F;
+  background-image: radial-gradient(ellipse farthest-corner at 80vw 15vh, rgba(250, 240, 128, 0.5) 5%, rgba(250, 240, 128, 0) 95%);
+  background-attachment: fixed; }
 
 .portfolio__feed {
   display: flex;
-  width: 1000px; }
+  padding: 1rem; }
   .portfolio__feed article {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
     position: relative;
     flex: 0 1 45%;
-    height: 200px;
+    height: 185px;
+    margin-right: 1rem;
     overflow: hidden; }
     .portfolio__feed article .portfolio__title {
       padding: 140px 1rem 0 1rem;
@@ -15,10 +24,10 @@ body {
       color: white; }
     .portfolio__feed article .portfolio__background_image {
       position: absolute;
-      opacity: 0.5;
-      top: 0;
-      left: 0;
-      height: 200px;
+      opacity: 0.7;
+      top: -3%;
+      left: -3%;
+      height: 145px;
       width: auto;
       z-index: -1; }
 
