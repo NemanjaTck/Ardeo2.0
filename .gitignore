@@ -5,3 +5,4 @@ node_modules/
 .idea
 notes.md
 .sass-cache
+.vscode
