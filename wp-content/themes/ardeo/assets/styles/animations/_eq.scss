@@ -1,0 +1,39 @@
+$randomNumber-1: random(12);
+$randomNumber-2: random(12);
+$randomNumber-3: random(12);
+
+@keyframes eq-1 {
+  0% {
+    transform: translateY(#{$randomNumber-1}px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(#{$randomNumber-1}px);
+  }
+}
+
+@keyframes eq-2 {
+  0% {
+    transform: translateY(#{$randomNumber-2}px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(#{$randomNumber-2}px);
+  }
+}
+
+@keyframes eq-3 {
+  0% {
+    transform: translateY(#{$randomNumber-3}px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(#{$randomNumber-3}px);
+  }
+}

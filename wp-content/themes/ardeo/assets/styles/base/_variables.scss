@@ -1,0 +1,10 @@
+// Breakpoints
+$breakpoint-min-xs: 576px;
+$breakpoint-min-sm: 768px;
+$breakpoint-min-md: 992px;
+$breakpoint-min-lg: 1200px;
+
+$breakpoint-max-xs: 576px - 0.02px;
+$breakpoint-max-sm: 768px - 0.02px;
+$breakpoint-max-md: 992px - 0.02px;
+$breakpoint-max-lg: 1200px - 0.02px;

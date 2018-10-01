@@ -1,0 +1,10 @@
+body {
+  margin: 0px;
+
+  &.pushable {
+    > .pusher {
+      background-image: radial-gradient(ellipse farthest-corner at 80vw 15vh, rgba( 250, 240, 128, 0.5) 5%, rgba( 250,240,128,0) 95%);
+      background-color: #00467f;
+    }
+  }
+}

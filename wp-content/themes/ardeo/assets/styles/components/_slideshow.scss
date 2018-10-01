@@ -1,0 +1,26 @@
+.slideshow {
+  .slick-list,
+  .slick-track {
+    height: 100%;
+  }
+
+  &__slide {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+
+  .slick-prev {
+    left: 20px;
+  }
+
+  .slick-next {
+    right: 20px;
+  }
+}
