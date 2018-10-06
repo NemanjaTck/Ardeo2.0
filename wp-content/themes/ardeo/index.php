@@ -29,11 +29,14 @@ $portfolio_query = new WP_Query(array(
 <?php endif; ?>
 
 <div id="section-contact">
-    <div class="contact__photo">
-        <?php echo wp_get_attachment_image( 21, Array('640', '480'), "", array( "class" => "img-responsive" ) ); ?> 
-    </div>
-    <div class="contact__form">
-        <?php echo do_shortcode( '[contact-form-7 id="20" title="Contact form"]' ); ?>  
+    <h2 class="section__title">Contact us</h2>
+    <div class="contact__content-container">
+        <div class="contact__photo">
+            <?php echo wp_get_attachment_image( 25, Array('640', '480'), "", array( "class" => "img-responsive" ) ); ?> 
+        </div>
+        <div class="contact__form">
+            <?php echo do_shortcode( '[wpforms id="23" title="false" description="false"]' ); ?>  
+        </div>
     </div>
 </div>
 

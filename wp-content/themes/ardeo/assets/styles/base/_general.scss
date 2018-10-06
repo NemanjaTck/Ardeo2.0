@@ -8,3 +8,16 @@ body {
     }
   }
 }
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: $base-font;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+  font-family: $base-font;
+}

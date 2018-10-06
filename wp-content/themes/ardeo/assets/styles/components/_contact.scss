@@ -1,14 +1,59 @@
 #section-contact {
-  background-color: #f3f3f3;
-  display: flex;
-  padding: 3rem 5rem;
+  background-color: $background-color-gray-1;
+  padding: 3rem 5rem 0 5rem;
   font-family: $base-font;
 
-  .contact__photo {
-    flex: 0 1 45%;
+  .section__title {
+    text-align: center;
+    margin-bottom: 2rem;
   }
 
-  .contact__form {
-    flex: 0 1 45%;
+  .contact__content-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .contact__photo {
+      flex: 0 1 45%;
+    }
+  
+    .contact__form {
+      flex: 0 1 45%;
+    }  
+  }
+
+  .wpforms-submit {
+    cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: 0;
+    border: none;
+    vertical-align: baseline;
+    background: #fff -webkit-gradient(linear,left top,left bottom,from(transparent),to(rgba(0,0,0,.02)));
+    background: #fff -webkit-linear-gradient(transparent,rgba(0,0,0,.02));
+    background: #fff linear-gradient(transparent,rgba(0,0,0,.02));
+    color: rgba(0,0,0,.6);
+    font-family: Roboto,Arial,sans-serif;
+    margin: 0 .25em 0 0;
+    padding: .8em .8em .8em;
+    text-transform: none;
+    text-shadow: none;
+    font-weight: 400;
+    line-height: 1em;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    border-radius: .21428571em;
+    -webkit-box-shadow: 0 0 0 1px #ddd inset, 0 0 0 0 transparent;
+    box-shadow: 0 0 0 1px #ddd inset, 0 0 0 0 transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: opacity .3s ease,background-color .3s ease,color .3s ease,background .3s ease,-webkit-box-shadow .3s ease;
+    transition: opacity .3s ease,background-color .3s ease,color .3s ease,background .3s ease,-webkit-box-shadow .3s ease;
+    transition: opacity .3s ease,background-color .3s ease,color .3s ease,box-shadow .3s ease,background .3s ease;
+    transition: opacity .3s ease,background-color .3s ease,color .3s ease,box-shadow .3s ease,background .3s ease,-webkit-box-shadow .3s ease;
+    will-change: '';
+    -webkit-tap-highlight-color: transparent;
   }
 }
