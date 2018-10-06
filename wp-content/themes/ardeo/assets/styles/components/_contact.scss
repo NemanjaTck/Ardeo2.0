@@ -1,0 +1,14 @@
+#section-contact {
+  background-color: #f3f3f3;
+  display: flex;
+  padding: 3rem 5rem;
+  font-family: $base-font;
+
+  .contact__photo {
+    flex: 0 1 45%;
+  }
+
+  .contact__form {
+    flex: 0 1 45%;
+  }
+}
