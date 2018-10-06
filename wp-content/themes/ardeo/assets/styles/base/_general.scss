@@ -3,8 +3,7 @@ body {
 
   &.pushable {
     > .pusher {
-      background-image: radial-gradient(ellipse farthest-corner at 80vw 15vh, rgba( 250, 240, 128, 0.5) 5%, rgba( 250,240,128,0) 95%);
-      background-color: #00467f;
+      background-color: #000;
     }
   }
 }
@@ -17,7 +16,7 @@ h1 {
 
 h2 {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 700; 
   font-size: 40px;
   font-family: $base-font;
 }
