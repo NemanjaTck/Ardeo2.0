@@ -1,20 +1,39 @@
 {
-    "name": "the-london-project",
+    "name": "the-ardeo-project",
     "version": "1.0.0",
-    "description": "The London Project",
-    "devDependencies": {
-        "@babel/core": "^7.0.0",
-        "gulp": "^4.0.0",
-        "gulp-autoprefixer": "^6.0.0",
-        "gulp-concat": "^2.6.1",
-        "gulp-imagemin": "^4.1.0",
-        "gulp-minify-css": "^1.2.4",
-        "gulp-run-command": "0.0.9",
-        "gulp-sass": "^4.0.1",
-        "gulp-size": "^3.0.0",
-        "gulp-svgmin": "^2.0.0",
-        "gulp-uglify": "^3.0.1"
-    },
+    "description": "The Ardeo Project",
     "private": true,
-    "dependencies": {}
+    "scripts": {
+        "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+        "build": "webpack",
+        "dev": "webpack --watch"
+    },
+    "devDependencies": {
+        "add": "^2.0.6",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.5",
+        "babel-preset-stage-2": "^6.24.1",
+        "webpack": "^4.20.2",
+        "webpack-cli": "^3.1.0",
+        "webpack-dev-server": "^3.1.9",
+        "yarn": "^1.7.0"
+    },
+    "dependencies": {
+        "babel-core": "^6.26.3",
+        "babel-loader": "^8.0.4",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-stage-2": "^6.24.1",
+        "clean-webpack-plugin": "^0.1.19",
+        "css-loader": "^1.0.0",
+        "extract-text-webpack-plugin": "^3.0.2",
+        "node-sass": "^4.9.3",
+        "node-sass-magic-importer": "^5.2.0",
+        "path": "^0.12.7",
+        "sass-loader": "^7.1.0",
+        "style-loader": "^0.23.0",
+        "stylelint": "^9.6.0",
+        "stylelint-webpack-plugin": "^0.10.5"
+    },
+    "main": "index.php",
+    "license": "MIT"
 }
