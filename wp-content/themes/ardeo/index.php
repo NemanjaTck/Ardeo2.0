@@ -2,7 +2,7 @@
 
 <div class="js-slideshow slideshow">
     <?php for ($i = 0; $i < 10; $i++): ?>
-        <img class="slideshow__slide" src="https://via.placeholder.com/1920x864">
+        <div class="slideshow__slide" style="background-image: url('https://via.placeholder.com/1920x864');"></div>
     <?php endfor; ?>
 </div>
 
@@ -12,7 +12,7 @@ $portfolio_query = new WP_Query(array(
 )); ?>
 
 <?php if ($portfolio_query->have_posts()): ?>
-    <div id="section-portfolio" class="section-portfolio">
+    <div id="portfolio" class="section-portfolio">
         <h2 class="section__title">Our Latest Projects</h2>
         <div class="portfolio__feed">
             <?php while ( $portfolio_query->have_posts() ) : $portfolio_query->the_post(); ?>
@@ -29,7 +29,7 @@ $portfolio_query = new WP_Query(array(
                             <li class="portfolio__list__item">WordPress</li>
                             <li class="portfolio__list__item">React</li>
                         </ul>
-                    </div> 
+                    </div>
                     <div class="gradient-overlay"></div>
                     <div class="color-overlay"></div>
                     <img class="portfolio__background_image" src="<?php echo $teaser_image_field['url']; ?>" alt="<?php echo $teaser_image_field['alt']; ?>" />
@@ -40,7 +40,7 @@ $portfolio_query = new WP_Query(array(
     <?php wp_reset_postdata(); ?>
 <?php endif; ?>
 
-<div id="section-skills" class="section-skills">
+<div id="skills" class="section-skills">
     <h2 class="section__title">We work with</h2>
     <div class="skills__grid">
         <div class="skills__slider">
@@ -122,14 +122,14 @@ $portfolio_query = new WP_Query(array(
     </div>
 </div>
 
-<div id="section-contact" class="section-contact">
+<div id="contact" class="section-contact">
     <h2 class="section__title">Contact us</h2>
     <div class="contact__content-container">
         <div class="contact__photo">
-            <?php echo wp_get_attachment_image( 25, Array('640', '480'), "", array( "class" => "img-responsive" ) ); ?> 
+            <?php echo wp_get_attachment_image( 25, Array('640', '480'), "", array( "class" => "img-responsive" ) ); ?>
         </div>
         <div class="contact__form">
-            <?php echo do_shortcode( '[wpforms id="23" title="false" description="false"]' ); ?>  
+            <?php echo do_shortcode( '[wpforms id="23" title="false" description="false"]' ); ?>
         </div>
     </div>
 </div>
