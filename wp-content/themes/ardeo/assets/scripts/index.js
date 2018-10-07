@@ -58,4 +58,18 @@ $(document).ready(function () {
       speed: 600,
     });
   }
+
+  var swiper = new Swiper('.skills__slider', {
+    spaceBetween: 30,
+    effect: 'fade',
+    loop: true,
+    mousewheel: {
+      invert: false,
+    },
+    // autoHeight: true,
+    pagination: {
+      el: '.skills__slider__pagination',
+      clickable: true,
+    }
+  });
 });

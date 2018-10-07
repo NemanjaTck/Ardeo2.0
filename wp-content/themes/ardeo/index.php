@@ -13,6 +13,7 @@ $portfolio_query = new WP_Query(array(
 
 <?php if ($portfolio_query->have_posts()): ?>
     <div id="section-portfolio">
+        <h2 class="section__title">Our Latest Projects</h2>
         <div class="portfolio__feed">
             <?php while ( $portfolio_query->have_posts() ) : $portfolio_query->the_post(); ?>
                 <?php $teaser_field = get_field('teaser_image'); ?>
@@ -27,6 +28,88 @@ $portfolio_query = new WP_Query(array(
     </div>
     <?php wp_reset_postdata(); ?>
 <?php endif; ?>
+
+<div id="section-skills">
+    <h2 class="section__title">We work with</h2>
+    <div class="skills__grid">
+        <div class="skills__slider">
+            <div class="skills__slider__wrp swiper-wrapper">
+                <div class="skills__slider__item swiper-slide">
+                    <div class="skills__slider__img">
+                        <?php echo wp_get_attachment_image( 25, Array('100', '100'), "", array( "class" => "icon-logo" ) ); ?>
+                    </div>
+                    <div class="skills__slider__content">
+                        <div class="skills__slider__question">Why do you need</div>
+                        <div class="skills__slider__title">React</div>
+                        <div class="skills__slider__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
+                        <a href="#" class="skills__slider__button">Read More</a>
+                    </div>
+                </div>
+                <div class="skills__slider__item swiper-slide">
+                    <div class="skills__slider__img">
+                        <?php echo wp_get_attachment_image( 25, Array('100', '100'), "", array( "class" => "icon-logo" ) ); ?>
+                    </div>
+                    <div class="skills__slider__content">
+                        <div class="skills__slider__question">Why we use</div>
+                        <div class="skills__slider__title">React</div>
+                        <div class="skills__slider__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
+                        <a href="#" class="skills__slider__button">Read More</a>
+                    </div>
+                </div>
+                <div class="skills__slider__item swiper-slide">
+                    <div class="skills__slider__img">
+                        <?php echo wp_get_attachment_image( 25, Array('100', '100'), "", array( "class" => "icon-logo" ) ); ?>
+                    </div>
+                    <div class="skills__slider__content">
+                        <div class="skills__slider__question">How do we implement</div>
+                        <div class="skills__slider__title">React</div>
+                        <div class="skills__slider__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
+                        <a href="#" class="skills__slider__button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="skills__slider__pagination"></div>
+        </div>
+        <div class="skills__slider">
+            <div class="skills__slider__wrp swiper-wrapper">
+                <div class="skills__slider__item swiper-slide">
+                    <div class="skills__slider__img">
+                        <?php echo wp_get_attachment_image( 25, Array('100', '100'), "", array( "class" => "icon-logo" ) ); ?>
+                    </div>
+                    <div class="skills__slider__content">
+                        <div class="skills__slider__question">Why do you need</div>
+                        <div class="skills__slider__title">React</div>
+                        <div class="skills__slider__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
+                        <a href="#" class="skills__slider__button">Read More</a>
+                    </div>
+                </div>
+                <div class="skills__slider__item swiper-slide">
+                    <div class="skills__slider__img">
+                        <?php echo wp_get_attachment_image( 25, Array('100', '100'), "", array( "class" => "icon-logo" ) ); ?>
+                    </div>
+                    <div class="skills__slider__content">
+                        <div class="skills__slider__question">Why we use</div>
+                        <div class="skills__slider__title">React</div>
+                        <div class="skills__slider__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
+                        <a href="#" class="skills__slider__button">Read More</a>
+                    </div>
+                </div>
+                <div class="skills__slider__item swiper-slide">
+                    <div class="skills__slider__img">
+                        <?php echo wp_get_attachment_image( 25, Array('100', '100'), "", array( "class" => "icon-logo" ) ); ?>
+                    </div>
+                    <div class="skills__slider__content">
+                        <div class="skills__slider__question">How do we implement</div>
+                        <div class="skills__slider__title">React</div>
+                        <div class="skills__slider__answer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
+                        <a href="#" class="skills__slider__button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="skills__slider__pagination"></div>
+        </div>
+    </div>
+</div>
 
 <div id="section-contact">
     <h2 class="section__title">Contact us</h2>
