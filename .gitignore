@@ -8,3 +8,4 @@ wp-content/uploads/
 notes.md
 .sass-cache
 .vscode
+package-lock.json
