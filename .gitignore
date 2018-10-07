@@ -9,3 +9,4 @@ notes.md
 .sass-cache
 .vscode
 package-lock.json
+bundle.js
