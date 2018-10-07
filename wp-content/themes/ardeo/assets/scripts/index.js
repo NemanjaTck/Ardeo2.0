@@ -44,7 +44,7 @@ $(document).ready(function () {
     $(".js-scrollTo").on('click', function() {
       $this = $(this);
       $('html, body').animate({
-          scrollTop: $($this.attr('href')).offset().top
+          scrollTop: $($this.attr('href')).offset().top - 62
       }, 600);
   });
   }
@@ -56,6 +56,8 @@ $(document).ready(function () {
       pauseOnHover: false,
       pauseOnDotsHover: true,
       speed: 600,
+      prevArrow: '<span class="slick-prev slick-arrow"><i class="arrow left icon"></i></span>',
+      nextArrow: '<span class="slick-next slick-arrow"><i class="arrow right icon"></i></span>',
     });
   }
 

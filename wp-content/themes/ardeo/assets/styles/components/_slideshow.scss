@@ -1,10 +1,13 @@
 .slideshow {
+  height: 100vh;
+
   .slick-list,
   .slick-track {
     height: 100%;
   }
 
   &__slide {
+    height: 100%;
     background-position: center center;
     background-size: cover;
   }
@@ -13,7 +16,12 @@
     position: absolute;
     top: 50%;
     z-index: 1;
+    cursor: pointer;
     transform: translateY(-50%);
+
+    i {
+      font-size: 32px;
+    }
   }
 
   .slick-prev {
