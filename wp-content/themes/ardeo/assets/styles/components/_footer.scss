@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  &__copy {
+    margin: 0;
+    font-size: 12px;
+    color: #fff;
+  }
+
+  &__social {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    &-item {
+      &:first-of-type a {
+        margin-left: 0;
+      }
+
+      &:last-of-type a {
+        margin-right: 0;
+      }
+    }
+
+    &-link {
+      margin: 0 5px;
+      color: #fff;
+
+      i {
+        font-size: 22px;
+      }
+    }
+  }
+}
