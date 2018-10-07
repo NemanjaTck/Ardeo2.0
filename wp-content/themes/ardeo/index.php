@@ -16,13 +16,24 @@ $portfolio_query = new WP_Query(array(
         <h2 class="section__title">Our Latest Projects</h2>
         <div class="portfolio__feed">
             <?php while ( $portfolio_query->have_posts() ) : $portfolio_query->the_post(); ?>
-                <?php $teaser_field = get_field('teaser_image'); ?>
-                <article id="post-<?php the_ID() ?>" class="<?php post_class() ?>">
+                <?php $teaser_image_field = get_field('teaser_image'); ?>
+                <div id="post-<?php the_ID() ?>" class="portfolio__card">
                     <div class="portfolio__title">
-                        <h2><?php the_title(); ?></h2>
+                        <h3><?php the_title(); ?></h3>
+                        <hr />
+                        <div class="portfolio__intro">Four words max intro</div>
                     </div>
-                    <img class="portfolio__background_image" src="<?php echo $teaser_field['url']; ?>" alt="<?php echo $teaser_field['alt']; ?>" />
-                </article>
+                    <div class="portfolio__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
+                    <div class="portfolio__utility">
+                        <ul class="portfolio__utility__list">
+                            <li class="portfolio__list__item">WordPress</li>
+                            <li class="portfolio__list__item">React</li>
+                        </ul>
+                    </div> 
+                    <div class="gradient-overlay"></div>
+                    <div class="color-overlay"></div>
+                    <img class="portfolio__background_image" src="<?php echo $teaser_image_field['url']; ?>" alt="<?php echo $teaser_image_field['alt']; ?>" />
+                </div>
             <?php endwhile; ?>
         </div>
     </div>
