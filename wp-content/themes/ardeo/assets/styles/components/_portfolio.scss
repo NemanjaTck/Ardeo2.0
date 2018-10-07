@@ -1,4 +1,4 @@
-#section-portfolio {
+.section-portfolio {
   background: #ffffff; /* Old browsers */
   background: -moz-linear-gradient(top, #cccccc 65%, #eaeaea 82%, #ffffff 97%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #cccccc 65%,#eaeaea 82%,#ffffff 97%); /* Chrome10-25,Safari5.1-6 */
@@ -8,6 +8,8 @@
 
   .portfolio__feed {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 1rem;
   
     .portfolio__card {
@@ -121,9 +123,8 @@
         opacity: 0.7;
         top: -3%;
         left: -3%;
-        height: 185px;
+        height: 285px;
         width: auto;
-        z-index: -1;
       }
     }
   }

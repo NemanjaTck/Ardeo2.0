@@ -12,7 +12,7 @@ $portfolio_query = new WP_Query(array(
 )); ?>
 
 <?php if ($portfolio_query->have_posts()): ?>
-    <div id="section-portfolio">
+    <div id="section-portfolio" class="section-portfolio">
         <h2 class="section__title">Our Latest Projects</h2>
         <div class="portfolio__feed">
             <?php while ( $portfolio_query->have_posts() ) : $portfolio_query->the_post(); ?>
@@ -40,7 +40,7 @@ $portfolio_query = new WP_Query(array(
     <?php wp_reset_postdata(); ?>
 <?php endif; ?>
 
-<div id="section-skills">
+<div id="section-skills" class="section-skills">
     <h2 class="section__title">We work with</h2>
     <div class="skills__grid">
         <div class="skills__slider">
@@ -122,7 +122,7 @@ $portfolio_query = new WP_Query(array(
     </div>
 </div>
 
-<div id="section-contact">
+<div id="section-contact" class="section-contact">
     <h2 class="section__title">Contact us</h2>
     <div class="contact__content-container">
         <div class="contact__photo">
