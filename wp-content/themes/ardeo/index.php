@@ -46,7 +46,7 @@ $portfolio_query = new WP_Query(array(
         <div class="skills__slider">
             <div class="skills__slider__wrp swiper-wrapper">
                 <div class="skills__slider__item swiper-slide">
-                    <div class="skills__slider__img">
+                    <div class="skills__slider__icon">
                         <?php echo wp_get_attachment_image( 25, Array('100', '100'), "", array( "class" => "icon-logo" ) ); ?>
                     </div>
                     <div class="skills__slider__content">
@@ -57,7 +57,7 @@ $portfolio_query = new WP_Query(array(
                     </div>
                 </div>
                 <div class="skills__slider__item swiper-slide">
-                    <div class="skills__slider__img">
+                    <div class="skills__slider__icon">
                         <?php echo wp_get_attachment_image( 25, Array('100', '100'), "", array( "class" => "icon-logo" ) ); ?>
                     </div>
                     <div class="skills__slider__content">
@@ -68,7 +68,7 @@ $portfolio_query = new WP_Query(array(
                     </div>
                 </div>
                 <div class="skills__slider__item swiper-slide">
-                    <div class="skills__slider__img">
+                    <div class="skills__slider__icon">
                         <?php echo wp_get_attachment_image( 25, Array('100', '100'), "", array( "class" => "icon-logo" ) ); ?>
                     </div>
                     <div class="skills__slider__content">
@@ -84,7 +84,7 @@ $portfolio_query = new WP_Query(array(
         <div class="skills__slider">
             <div class="skills__slider__wrp swiper-wrapper">
                 <div class="skills__slider__item swiper-slide">
-                    <div class="skills__slider__img">
+                    <div class="skills__slider__icon">
                         <?php echo wp_get_attachment_image( 25, Array('100', '100'), "", array( "class" => "icon-logo" ) ); ?>
                     </div>
                     <div class="skills__slider__content">
@@ -95,7 +95,7 @@ $portfolio_query = new WP_Query(array(
                     </div>
                 </div>
                 <div class="skills__slider__item swiper-slide">
-                    <div class="skills__slider__img">
+                    <div class="skills__slider__icon">
                         <?php echo wp_get_attachment_image( 25, Array('100', '100'), "", array( "class" => "icon-logo" ) ); ?>
                     </div>
                     <div class="skills__slider__content">
@@ -106,7 +106,7 @@ $portfolio_query = new WP_Query(array(
                     </div>
                 </div>
                 <div class="skills__slider__item swiper-slide">
-                    <div class="skills__slider__img">
+                    <div class="skills__slider__icon">
                         <?php echo wp_get_attachment_image( 25, Array('100', '100'), "", array( "class" => "icon-logo" ) ); ?>
                     </div>
                     <div class="skills__slider__content">
