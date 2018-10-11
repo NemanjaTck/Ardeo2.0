@@ -1,9 +1,13 @@
 <?php get_header();?>
 
 <div class="js-slideshow slideshow">
-    <?php for ($i = 0; $i < 10; $i++): ?>
-        <div class="slideshow__slide" style="background-image: url('https://via.placeholder.com/1920x864');"></div>
-    <?php endfor; ?>
+    <?php $slides = new WP_Query(array(
+        'posts_per_page' => -1,
+        'post_type' => 'slideshow'
+    )); ?>
+    <?php if ($slides->have_posts()): while($slides->have_posts()): $slides->the_post(); ?>
+        <div class="slideshow__slide" style="background-image: url('<?php the_post_thumbnail_url('slideshow'); ?>');"></div>
+    <?php endwhile; endif; ?>
 </div>
 
 <?php
