@@ -1,0 +1,15 @@
+.section-about {
+  .section__paragraph {
+    text-align: center;
+    margin: 5rem 7.5rem;
+    font-size: 20px;
+
+    a {
+      color: $primary-color;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}

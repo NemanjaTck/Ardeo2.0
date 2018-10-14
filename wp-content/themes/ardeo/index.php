@@ -1,11 +1,11 @@
 <?php get_header();?>
 
 <div class="hero__container">
-<?php 
-    $hero_src = wp_get_attachment_image_src( 46, 'full' );
-    $hero_srcset = wp_get_attachment_image_srcset( 46, 'full' );
-    $hero_sizes = wp_get_attachment_image_sizes( 46, 'full' );
-?>
+    <?php 
+        $hero_src = wp_get_attachment_image_src( 46, 'full' );
+        $hero_srcset = wp_get_attachment_image_srcset( 46, 'full' );
+        $hero_sizes = wp_get_attachment_image_sizes( 46, 'full' );
+    ?>
     <img src="<?php echo esc_attr( $hero_src );?>"
         srcset="<?php echo esc_attr( $hero_srcset ); ?>"
         sizes="<?php echo esc_attr( $hero_sizes );?>"
@@ -16,6 +16,22 @@
 $portfolio_query = new WP_Query(array(
     'post_type' => 'portfolio',
 )); ?>
+
+<div class="section-about">
+    <h2 class="section__title">About Us</h2>
+    <p class="section__paragraph">
+        We provide end-to-end WordPress opportunities from strategy and planning to website design and development, 
+        as well as extensive security, scalability, performance and long-term guidance and maintenance.</p>
+    <p class="section__paragraph">
+        Our mission is to help start-ups and small to medium companies to become more successful in the digital world.
+        We accomplish that by taking the time to understand your business goals,
+        and by working with you to design, deliver and support high-performing web solutions that gain you significant business advantage.
+    </p>
+    <p class="section__paragraph">
+        You are still not sure if you should work with us? Drop us a <a href="#contact">message</a> and get completely free consulting and approximate estimation
+        from our experts.
+    </p>
+</div>
 
 <?php if ($portfolio_query->have_posts()): ?>
     <div id="portfolio" class="section-portfolio">
@@ -38,7 +54,15 @@ $portfolio_query = new WP_Query(array(
                     </div>
                     <div class="gradient-overlay"></div>
                     <div class="color-overlay"></div>
-                    <img class="portfolio__background_image" src="<?php echo $teaser_image_field['url']; ?>" alt="<?php echo $teaser_image_field['alt']; ?>" />
+                    <div class="ui longer modal">
+                        <div class="header">Header</div>
+                        <div class="scrolling content">
+                            <p>Very long content goes here</p>
+                        </div>
+                    </div>
+                    <div class="portfolio__image__wrapper">
+                        <img class="portfolio__background_image" src="<?php echo $teaser_image_field['url']; ?>" alt="<?php echo $teaser_image_field['alt']; ?>" />
+                    </div>
                 </div>
             <?php endwhile; ?>
         </div>
