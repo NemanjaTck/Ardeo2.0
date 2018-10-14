@@ -9,7 +9,6 @@
     padding: 1rem;
   
     .portfolio__card {
-      background-color: rgba( 255, 255, 255, 0.1);
       border-radius: 15px;
       box-shadow: 0 10px 20px rgba(0,0,0,0.20), 0 10px 8px rgba(0,0,0,0.15);
       position: relative;
@@ -24,7 +23,6 @@
 
       .color-overlay {
          /* Rectangle 11: */
-        background: rgba(6, 135, 255, 0.3);
         height: 285px;
         width: 100%;
         position: absolute;
@@ -58,7 +56,7 @@
         }
 
         .color-overlay {
-          background: rgba(6, 135, 255, 0.8);
+          background: rgba(228, 136, 49, 0.8);
         }
       }
   
