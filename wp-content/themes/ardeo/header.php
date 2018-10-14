@@ -5,7 +5,7 @@
     <title>Ardeo Solutions</title>
     <?php wp_head(); ?>
 </head>
-<body id="home" <?php body_class(); ?>>
+<body id="home" <?php body_class(); ?> style="background-image: url('<?php wp_get_attachment_image_src( 46, 'full' )[0]; ?>'); background-repeat: repeat;">
     <nav class="js-navigation navigation">
         <ul class="navigation__menu">
             <li class="navigation__menu-item">

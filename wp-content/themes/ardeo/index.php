@@ -1,13 +1,15 @@
 <?php get_header();?>
 
-<div class="js-slideshow slideshow">
-    <?php $slides = new WP_Query(array(
-        'posts_per_page' => -1,
-        'post_type' => 'slideshow'
-    )); ?>
-    <?php if ($slides->have_posts()): while($slides->have_posts()): $slides->the_post(); ?>
-        <div class="slideshow__slide" style="background-image: url('<?php the_post_thumbnail_url('slideshow'); ?>');"></div>
-    <?php endwhile; endif; ?>
+<div class="hero__container">
+<?php 
+    $hero_src = wp_get_attachment_image_src( 46, 'full' );
+    $hero_srcset = wp_get_attachment_image_srcset( 46, 'full' );
+    $hero_sizes = wp_get_attachment_image_sizes( 46, 'full' );
+?>
+    <img src="<?php echo esc_attr( $hero_src );?>"
+        srcset="<?php echo esc_attr( $hero_srcset ); ?>"
+        sizes="<?php echo esc_attr( $hero_sizes );?>"
+        alt="hero__image" />
 </div>
 
 <?php
