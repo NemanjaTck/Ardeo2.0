@@ -5,14 +5,14 @@
     <title>Ardeo Solutions</title>
     <?php wp_head(); ?>
 </head>
-<body id="home" <?php body_class(); ?> style="background-image: url('<?php wp_get_attachment_image_src( 46, 'full' )[0]; ?>'); background-repeat: repeat;">
+<body id="home" <?php body_class(); ?>>
     <nav class="js-navigation navigation">
         <ul class="navigation__menu">
             <li class="navigation__menu-item">
-                <a href="#about-us" class="js-scrollTo navigation__menu-link">About us</a>
+                <a href="#about-us" alt="About us" class="js-scrollTo navigation__menu-link">About us</a>
             </li>
             <li class="navigation__menu-item">
-                <a href="#portfolio" class="js-scrollTo navigation__menu-link">Portfolio</a>
+                <a href="#portfolio" alt="Portfolio" class="js-scrollTo navigation__menu-link">Portfolio</a>
             </li>
         </ul>
 
@@ -20,10 +20,10 @@
 
         <ul class="navigation__menu">
             <li class="navigation__menu-item">
-                <a href="#skills" class="js-scrollTo navigation__menu-link">Skills</a>
+                <a href="#skills" alt="Skills" class="js-scrollTo navigation__menu-link">Skills</a>
             </li>
             <li class="navigation__menu-item">
-                <a href="#contact" class="js-scrollTo navigation__menu-link">Contact</a>
+                <a href="#contact" alt="Contact" class="js-scrollTo navigation__menu-link">Contact</a>
             </li>
         </ul>
     </nav>
@@ -31,10 +31,10 @@
     <nav class="js-navigationFixed navigation navigation--fixed hidden">
         <ul class="navigation__menu">
             <li class="navigation__menu-item">
-                <a href="#about-us" class="js-scrollTo navigation__menu-link">About us</a>
+                <a href="#about-us" alt="About us" class="js-scrollTo navigation__menu-link">About us</a>
             </li>
             <li class="navigation__menu-item">
-                <a href="#portfolio" class="js-scrollTo navigation__menu-link">Portfolio</a>
+                <a href="#portfolio" alt="Portfolio" class="js-scrollTo navigation__menu-link">Portfolio</a>
             </li>
         </ul>
 
@@ -42,10 +42,10 @@
 
         <ul class="navigation__menu">
             <li class="navigation__menu-item">
-                <a href="#skills" class="js-scrollTo navigation__menu-link">Skills</a>
+                <a href="#skills" alt="Skills" class="js-scrollTo navigation__menu-link">Skills</a>
             </li>
             <li class="navigation__menu-item">
-                <a href="#contact" class="js-scrollTo navigation__menu-link">Contact</a>
+                <a href="#contact" alt="Contact" class="js-scrollTo navigation__menu-link">Contact</a>
             </li>
         </ul>
     </nav>

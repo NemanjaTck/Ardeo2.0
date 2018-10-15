@@ -3,6 +3,7 @@ $(document).ready(function () {
   sidebarNavigation();
   scrollToElement();
   initializeSlideshow();
+  portfolioModal();
 
   function stickyNavigation() {
     $(document).on('scroll', function () {
@@ -44,7 +45,7 @@ $(document).ready(function () {
     $(".js-scrollTo").on('click', function() {
       $this = $(this);
       $('html, body').animate({
-          scrollTop: $($this.attr('href')).offset().top - 62
+          scrollTop: $($this.attr('href')).offset().top - 90
       }, 600);
   });
   }
@@ -58,6 +59,14 @@ $(document).ready(function () {
       speed: 600,
       prevArrow: '<span class="slick-prev slick-arrow"><i class="arrow left icon"></i></span>',
       nextArrow: '<span class="slick-next slick-arrow"><i class="arrow right icon"></i></span>',
+    });
+  }
+
+  function portfolioModal () {
+    $('.js-modalOpen').each(function () {
+      $(this).on('click', function () {
+        $('#' + $(this).data('modal')).modal('show');
+      });
     });
   }
 

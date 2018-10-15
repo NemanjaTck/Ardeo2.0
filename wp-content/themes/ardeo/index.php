@@ -1,7 +1,7 @@
 <?php get_header();?>
 
 <div class="hero__container">
-    <?php 
+    <?php
         $hero_src = wp_get_attachment_image_src( 46, 'full' );
         $hero_srcset = wp_get_attachment_image_srcset( 46, 'full' );
         $hero_sizes = wp_get_attachment_image_sizes( 46, 'full' );
@@ -17,10 +17,10 @@ $portfolio_query = new WP_Query(array(
     'post_type' => 'portfolio',
 )); ?>
 
-<div class="section-about">
+<div id="about-us" class="section-about">
     <h2 class="section__title">About Us</h2>
     <p class="section__paragraph">
-        We provide end-to-end WordPress opportunities from strategy and planning to website design and development, 
+        We provide end-to-end WordPress opportunities from strategy and planning to website design and development,
         as well as extensive security, scalability, performance and long-term guidance and maintenance.</p>
     <p class="section__paragraph">
         Our mission is to help start-ups and small to medium companies to become more successful in the digital world.
@@ -28,7 +28,7 @@ $portfolio_query = new WP_Query(array(
         and by working with you to design, deliver and support high-performing web solutions that gain you significant business advantage.
     </p>
     <p class="section__paragraph">
-        You are still not sure if you should work with us? Drop us a <a href="#contact">message</a> and get completely free consulting and approximate estimation
+        You are still not sure if you should work with us? Drop us a <a href="#contact" class="js-scrollTo">message</a> and get completely free consulting and approximate estimation
         from our experts.
     </p>
 </div>
@@ -39,7 +39,7 @@ $portfolio_query = new WP_Query(array(
         <div class="portfolio__feed">
             <?php while ( $portfolio_query->have_posts() ) : $portfolio_query->the_post(); ?>
                 <?php $teaser_image_field = get_field('teaser_image'); ?>
-                <div id="post-<?php the_ID() ?>" class="portfolio__card">
+                <div class="js-modalOpen portfolio__card" data-modal="<?php the_ID(); ?>">
                     <div class="portfolio__title">
                         <h3><?php the_title(); ?></h3>
                         <hr />
@@ -54,14 +54,16 @@ $portfolio_query = new WP_Query(array(
                     </div>
                     <div class="gradient-overlay"></div>
                     <div class="color-overlay"></div>
-                    <div class="ui longer modal">
-                        <div class="header">Header</div>
-                        <div class="scrolling content">
-                            <p>Very long content goes here</p>
-                        </div>
-                    </div>
                     <div class="portfolio__image__wrapper">
                         <img class="portfolio__background_image" src="<?php echo $teaser_image_field['url']; ?>" alt="<?php echo $teaser_image_field['alt']; ?>" />
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div id="<?php the_ID(); ?>" class="ui longer modal">
+                    <div class="header"><?php the_title(); ?></div>
+                    <div class="scrolling content">
+                        <p>Very long content goes here</p>
                     </div>
                 </div>
             <?php endwhile; ?>
