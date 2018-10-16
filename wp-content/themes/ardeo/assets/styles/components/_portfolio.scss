@@ -7,7 +7,7 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 1rem;
-  
+
     .portfolio__card {
       border-radius: 15px;
       box-shadow: 0 10px 20px rgba(0,0,0,0.20), 0 10px 8px rgba(0,0,0,0.15);
@@ -60,7 +60,7 @@
           background: rgba(228, 136, 49, 0.8);
         }
       }
-  
+
       .portfolio__title {
         text-align: center;
         margin: 2rem 0 0 0;
@@ -120,15 +120,24 @@
           }
         }
       }
-  
-      .portfolio__background_image {
-        position: absolute;
-        opacity: 0.3;
-        top: -3%;
-        left: -3%;
-        height: 315px;
-        width: auto;
+
+      .portfolio__image__wrapper {
+        position: relative;
+        top: -10px;
+        left: -10px;
+        width: calc(100% + 10px);
+        height: calc(100% + 20px);
+        background-size: cover;
       }
+
+      // .portfolio__background_image {
+      //   position: absolute;
+      //   opacity: 0.3;
+      //   top: -3%;
+      //   left: -3%;
+      //   height: 315px;
+      //   width: auto;
+      // }
     }
   }
 }

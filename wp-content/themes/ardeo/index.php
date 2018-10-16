@@ -54,9 +54,7 @@ $portfolio_query = new WP_Query(array(
                     </div>
                     <div class="gradient-overlay"></div>
                     <div class="color-overlay"></div>
-                    <div class="portfolio__image__wrapper">
-                        <img class="portfolio__background_image" src="<?php echo $teaser_image_field['url']; ?>" alt="<?php echo $teaser_image_field['alt']; ?>" />
-                    </div>
+                    <div class="portfolio__image__wrapper" style="background-image: url('<?php echo $teaser_image_field['url']; ?>');"></div>
                 </div>
 
                 <!-- Modal -->
