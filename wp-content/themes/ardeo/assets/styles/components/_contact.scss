@@ -5,49 +5,52 @@
   .contact__content-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     .contact__photo {
       flex: 0 1 45%;
+
+      @media screen and (max-width: $breakpoint-min-md) {
+        flex: 0 1 100%;
+        text-align: center;
+      }
     }
   
     .contact__form {
       flex: 0 1 45%;
+
+      @media screen and (max-width: $breakpoint-min-md) {
+        flex: 0 1 100%;
+      }
     }  
+
+    .section__paragraph {
+      text-align: center;
+      margin: 2rem 0;
+      font-size: 20px;
+
+      a {
+        color: $primary-color;
+  
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+    }
   }
 
-  .wpforms-submit {
-    cursor: pointer;
-    display: inline-block;
-    min-height: 1em;
-    outline: 0;
-    border: none;
-    vertical-align: baseline;
-    background: #fff -webkit-gradient(linear,left top,left bottom,from(transparent),to(rgba(0,0,0,.02)));
-    background: #fff -webkit-linear-gradient(transparent,rgba(0,0,0,.02));
-    background: #fff linear-gradient(transparent,rgba(0,0,0,.02));
-    color: rgba(0,0,0,.6);
-    font-family: Roboto,Arial,sans-serif;
-    margin: 0 .25em 0 0;
-    padding: .8em .8em .8em;
-    text-transform: none;
-    text-shadow: none;
-    font-weight: 400;
-    line-height: 1em;
-    font-style: normal;
-    text-align: center;
+  .wpforms-submit.ui.button {
+    display: inline-flex;
+    background-image: linear-gradient(147deg, $secondary-color 0%, $primary-color 74%);
+    padding: 15px 35px;
+    border-radius: 50px;
+    color: #fff;
+    box-shadow: 0px 14px 80px rgba(228, 136, 49, 0.4);
     text-decoration: none;
-    border-radius: .21428571em;
-    -webkit-box-shadow: 0 0 0 1px #ddd inset, 0 0 0 0 transparent;
-    box-shadow: 0 0 0 1px #ddd inset, 0 0 0 0 transparent;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-transition: opacity .3s ease,background-color .3s ease,color .3s ease,background .3s ease,-webkit-box-shadow .3s ease;
-    transition: opacity .3s ease,background-color .3s ease,color .3s ease,background .3s ease,-webkit-box-shadow .3s ease;
-    transition: opacity .3s ease,background-color .3s ease,color .3s ease,box-shadow .3s ease,background .3s ease;
-    transition: opacity .3s ease,background-color .3s ease,color .3s ease,box-shadow .3s ease,background .3s ease,-webkit-box-shadow .3s ease;
-    will-change: '';
-    -webkit-tap-highlight-color: transparent;
+    font-weight: 500;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 1px;  
+    font-size: 1.6em;
   }
 }

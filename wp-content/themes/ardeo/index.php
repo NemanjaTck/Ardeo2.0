@@ -161,6 +161,8 @@ $portfolio_query = new WP_Query(array(
             <?php echo wp_get_attachment_image( 25, Array('640', '480'), "", array( "class" => "img-responsive" ) ); ?>
         </div>
         <div class="contact__form">
+            <p class="section__paragraph">Let's talk about your idea and how we can help!</p>
+            <p class="section__paragraph">Drop us a message below or contact us at <a href="mailto://ardeo.solutions@gmail.com">ardeo.solutions@gmail.com</a></p>
             <?php echo do_shortcode( '[wpforms id="23" title="false" description="false"]' ); ?>
         </div>
     </div>
