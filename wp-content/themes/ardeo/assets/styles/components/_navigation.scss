@@ -149,12 +149,12 @@
     }
 
     &:hover {
-      border-color: #00467f;
+      border-color: $secondary-color;
     }
 
     &.active {
-      background-color: #00467f;
-      border-color: #00467f;
+      background-color: $secondary-color;
+      border-color: $secondary-color;
       transform: rotate(45deg);
 
       &::before,
