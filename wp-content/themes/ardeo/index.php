@@ -43,13 +43,13 @@ $portfolio_query = new WP_Query(array(
                     <div class="portfolio__title">
                         <h3><?php the_title(); ?></h3>
                         <hr />
-                        <div class="portfolio__intro">Four words max intro</div>
+                        <div class="portfolio__intro"><?php the_field('intro') ?></div>
                     </div>
-                    <div class="portfolio__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</div>
+                    <div class="portfolio__description"><?php the_field('description') ?></div>
                     <div class="portfolio__utility">
                         <ul class="portfolio__utility__list">
-                            <li class="portfolio__list__item">WordPress</li>
-                            <li class="portfolio__list__item">React</li>
+                            <li class="portfolio__list__item"><i class="code branch icon"></i>WordPress</li>
+                            <li class="portfolio__list__item"><i class="code branch icon"></i>React</li>
                         </ul>
                     </div>
                     <div class="gradient-overlay"></div>

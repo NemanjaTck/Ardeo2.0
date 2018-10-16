@@ -16,6 +16,7 @@
       height: 285px;
       margin: 2rem;
       overflow: hidden;
+      background-color: $background-color-gray-2;
 
       @media screen and (max-width: $breakpoint-min-md) {
         flex: 0 1 100%;
@@ -116,17 +117,13 @@
             padding: 0 0 0 22px;
             display: inline-block;
             color: $color-white;
-
-            &.portfolio__list__item {
-              background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/icon-chat.svg) no-repeat 0 .1em;
-            }
           }
         }
       }
   
       .portfolio__background_image {
         position: absolute;
-        opacity: 0.7;
+        opacity: 0.3;
         top: -3%;
         left: -3%;
         height: 315px;

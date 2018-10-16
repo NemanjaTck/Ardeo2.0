@@ -7,8 +7,17 @@ body {
   font-size: 16px;
   font-size: 1.6em;
   line-height: 1.6;
-  // background-image: url("/wp-content/themes/ardeo/public/images/background.svg");
-  // background-repeat: repeat;
+
+  // &.pushable {
+  //   background: url("/Ardeo2.0/wp-content/themes/ardeo/public/images/background.svg") !important;
+  //   background-repeat-x: no-repeat !important;
+  //   background-size: cover !important;
+  //   background-position: 0 1200px !important;
+
+  //   > .pusher {
+  //     background-color: inherit;
+  //   }
+  // }
 }
 
 h1 {
